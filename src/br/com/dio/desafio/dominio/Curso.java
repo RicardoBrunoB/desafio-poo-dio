@@ -1,4 +1,4 @@
-package br.com.dio.dominio;
+package br.com.dio.desafio.dominio;
 
 public class Curso extends Conteudo{
     private int cargahoraria;
@@ -9,7 +9,7 @@ public class Curso extends Conteudo{
 
     @Override
     public double calcularXp() {
-        return 0;
+        return cargahoraria;
     }
 
     public Curso(){
@@ -21,7 +21,7 @@ public class Curso extends Conteudo{
 
     @Override
     public String toString() {
-        return "Curso{" +
+        return "Curso\n{" +
                 "titulo='" + getTitulo() + '\'' +
                 ", descricao='" + getDescricao() + '\'' +
                 ", cargahoraria=" + cargahoraria +
